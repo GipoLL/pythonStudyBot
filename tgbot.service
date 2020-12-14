@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+User=wooziee
+Group=wooziee
+
+WorkingDirectory=/home/wooziee/pythonStudyBot
+Enviroment="PYTHONPATH=/home/wooziee/pythonStudyBot"
+ExecStart=python3 main.py
+
+[Install]
+WantedBy=multi-user.target
